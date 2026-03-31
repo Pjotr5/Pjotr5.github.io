@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    line-height: 1.65;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+}
+
+/* ── Header ───────────────────────────────────────────── */
+
+header {
+    margin-bottom: 2.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.2rem;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* ── Navigation ───────────────────────────────────────── */
+
+nav.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav.profile-links a {
+    display: inline-block;
+    padding: 0.3rem 0.85rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+nav.profile-links a:hover {
+    background: #f0f0f0;
+    border-color: #999;
+}
+
+/* ── Sections ─────────────────────────────────────────── */
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+/* ── About ────────────────────────────────────────────── */
+
+#about p {
+    margin-bottom: 0.8rem;
+}
+
+/* ── Contact ──────────────────────────────────────────── */
+
+#contact p {
+    margin-bottom: 0.3rem;
+}
+
+#contact .email {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", Menlo, Consolas, monospace;
+    font-size: 0.92rem;
+}
+
+/* ── Publications ─────────────────────────────────────── */
+
+.pub-group-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #444;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.pub {
+    margin-bottom: 1.3rem;
+}
+
+.pub .title {
+    font-style: italic;
+    color: #1a1a1a;
+}
+
+.pub .authors {
+    font-size: 0.92rem;
+    color: #555;
+}
+
+.pub .venue {
+    font-size: 0.92rem;
+    color: #555;
+}
+
+.pub .note {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+}
+
+.pub .badges {
+    margin-top: 0.2rem;
+}
+
+/* ── Badges ───────────────────────────────────────────── */
+
+.badge {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: 3px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 3px;
+    transition: opacity 0.15s;
+}
+
+.badge:hover {
+    opacity: 0.8;
+}
+
+.badge-arxiv {
+    background: #b31b1b;
+}
+
+.badge-journal {
+    background: #2874a6;
+}
+
+.badge-book {
+    background: #6c3483;
+}
+
+.badge-lean {
+    background: #1e8449;
+}
+
+.badge-slides {
+    background: #7f8c8d;
+}
+
+/* ── Talks ────────────────────────────────────────────── */
+
+.talk {
+    margin-bottom: 0.9rem;
+}
+
+.talk .talk-title {
+    font-style: italic;
+    color: #1a1a1a;
+}
+
+.talk .talk-venue {
+    font-size: 0.92rem;
+    color: #555;
+}
+
+.talk .talk-date {
+    font-size: 0.88rem;
+    color: #888;
+}
+
+/* ── Links ────────────────────────────────────────────── */
+
+a {
+    color: #1a5276;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 2rem 1rem 3rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
